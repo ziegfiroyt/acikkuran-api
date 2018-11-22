@@ -3,8 +3,13 @@
 <p align="center"><img src="https://raw.githubusercontent.com/ziegfiroyt/acikkuran-api/master/logo.png" alt="Apaçık Kur'an'a andolsun!" /></p>
 <h2 align="center">Açık Kuran API</h2>
 <p align="center"><a href="https://acikkuran.com">https://acikkuran.com</a></p>
+<p align="center">
+  Böylece sen, batıl olan her şeyden arınmış olarak, yüzünü kararlı bir şekilde Allah'ın, insanları üzerinde yarattığı doğa/fıtrat kanununa/dine çevir! Allah'ın, insanın doğasına yerleştirdiği fıtrata uygun davran ki, Allah'ın yaratmasında bir değişime meydan verilmesin. Bu, gerçek dinin amacıdır; fakat insanların çoğu bilmez. (<a href="https://acikkuran.com">30:30</a>)
+</p>
 
 ## GET `/authors`
+
+> Lists all authors.
 
 Example: `https://api.acikkuran.com/authors`
 
@@ -31,6 +36,8 @@ Response body:
     
 ## GET `/surahs`
 
+> Lists all surahs.
+
 Example: `https://api.acikkuran.com/surahs`
 
 Response body:
@@ -54,6 +61,8 @@ Response body:
 }
 ```
 ## GET `/surah/[surah_id]`
+
+> Gets surah's detail and lists verses of this surah.
 
 Example: `https://api.acikkuran.com/surah/6`
 
@@ -102,6 +111,8 @@ Response body:
     
 ## GET `/surah/[surah_id]/verse/[verse_number]`
 
+> Gets verse's detail.
+
 Example: `https://api.acikkuran.com/surah/6/verse/1`
 
 Response body:
@@ -143,6 +154,8 @@ Response body:
     
 ## GET `/surah/[surah_id]/verse/[verse_number]/translations`
 
+> Lists all translations of this verse.
+
 Example: `https://api.acikkuran.com/surah/6/verse/1/translations`
 
 Response body:
@@ -178,6 +191,8 @@ Response body:
     
 ## GET `/surah/[surah_id]/verse/[verse_number]/words`
 
+> Lists all words of this verse along with descriptions and root infos.
+
 Example: `https://api.acikkuran.com/surah/6/verse/1/words`
 
 Response body:
@@ -211,6 +226,8 @@ Response body:
 
 ## GET `/root/[id]`
 
+> Gets detail of this root and lists all differentiations.
+
 Example: `https://api.acikkuran.com/root/3`
 
 Response body:
@@ -240,6 +257,8 @@ Response body:
 ```
 
 ## GET `/rootdiff/[id]`
+
+> Lists all verses related to this root differentiation.
 
 Example: `https://api.acikkuran.com/rootdiff/28`
 
@@ -275,6 +294,8 @@ Response body:
     
 ## GET `/rootchars`
 
+> Lists all Arabic letters.
+
 Example: `https://api.acikkuran.com/rootchars`
 
 Response body:
@@ -302,6 +323,8 @@ Response body:
 ```
     
 ## GET `/rootchar/[id]`
+
+> Lists all roots which begins with this letter.
 
 Example: `https://api.acikkuran.com/rootchar/1`
 

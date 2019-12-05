@@ -60,11 +60,13 @@ Response body:
     ]
 }
 ```
-## GET `/surah/[surah_id]`
+## GET `/surah/[surah_id]?author=[author_id]`
 
 > Gets surah's detail and lists verses of this surah.
 
-Example: `https://api.acikkuran.com/surah/6`
+Example 1: `https://api.acikkuran.com/surah/6` Default translation
+
+Example 2: `https://api.acikkuran.com/surah/6?author=8` Author can be select with `author` parameter
 
 Response body:
 
@@ -109,11 +111,13 @@ Response body:
 }
 ```
     
-## GET `/surah/[surah_id]/verse/[verse_number]`
+## GET `/surah/[surah_id]/verse/[verse_number]?author=[author_id]`
 
 > Gets verse's detail.
 
-Example: `https://api.acikkuran.com/surah/6/verse/1`
+Example 1: `https://api.acikkuran.com/surah/6/verse/1` Default translation
+
+Example 2: `https://api.acikkuran.com/surah/6/verse/1?author=8` Author can be select with `author` parameter
 
 Response body:
 
@@ -256,11 +260,13 @@ Response body:
 }
 ```
 
-## GET `/rootdiff/[id]`
+## GET `/rootdiff/[id]?author=[author_id]`
 
 > Lists all verses related to this root differentiation.
 
-Example: `https://api.acikkuran.com/rootdiff/28`
+Example 1: `https://api.acikkuran.com/rootdiff/28` Default translation
+
+Example 2: `https://api.acikkuran.com/rootdiff/28?author=8` Author can be select with `author` parameter
 
 Response body:
 
